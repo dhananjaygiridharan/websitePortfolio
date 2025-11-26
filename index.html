@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay & Michael – Websites for Small Businesses</title>
+  <meta name="description" content="Fast, modern websites for local small businesses like bakeries, cafes, boutiques, and service shops. Designed by Jay & Michael." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">JM</span>
+        <span class="brand-text">Jay & Michael</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="headline">Bright, Fast Websites for Local Small Businesses</h1>
+        <p class="tagline">We help bakeries, cafes, salons, and local shops look professional online and bring in more customers.</p>
+        <div class="cta-row">
+          <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+          <a href="#contact" class="btn btn-ghost">Get a Quote</a>
+        </div>
+        <!-- Hero selling points: CSS scroll-snap for ultra smoothness -->
+        <div class="selling-points snaps" data-slider="hero">
+          <div class="snap-track" tabindex="0" aria-label="Key benefits">
+            <div class="snap-item">
+              <span class="badge">Performance</span>
+              <p>Lightweight sites that load fast and feel smooth.</p>
+            </div>
+            <div class="snap-item">
+              <span class="badge">Mobile-first</span>
+              <p>Looks great on phones—where most customers find you.</p>
+            </div>
+            <div class="snap-item">
+              <span class="badge">SEO</span>
+              <p>Structure and content that help locals discover your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card reveal">
+          <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1400&auto=format&fit=crop" alt="Local bakery counter" loading="lazy"/>
+          <div class="hero-card-content">
+            <h3>Made for Small Businesses</h3>
+            <p>Fresh, friendly design with bright, welcoming accents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="col copy">
+        <h2 class="section-title">About Us</h2>
+        <p class="lead">We’re Jay and Michael—two high schoolers at Glacier Peak who build simple, effective websites for local small businesses.</p>
+        <p>We care about helping our community. From bakeries and coffee shops to salons and home services, we create clean, trustworthy sites that help customers find you and take action.</p>
+        <ul class="checklist">
+          <li>Mobile-first, easy-to-use layouts</li>
+          <li>Clear menus, services, pricing, and hours</li>
+          <li>Local SEO and performance best practices</li>
+        </ul>
+      </div>
+      <div class="col feature-cards">
+        <article class="feature reveal">
+          <div class="icon" aria-hidden="true">🧁</div>
+          <h3>Designed for Locals</h3>
+          <p>Friendly, bright design that reflects your neighborhood brand.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon" aria-hidden="true">📍</div>
+          <h3>Get Found Nearby</h3>
+          <p>Clear details and local SEO so customers can discover you fast.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon" aria-hidden="true">🛠️</div>
+          <h3>Easy to Update</h3>
+          <p>Maintainable structure so hours, menus, and promos stay current.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Selected Work</h2>
+        <p class="muted">Three sample projects. Replace images, titles, and links with your own.</p>
+      </div>
+
+      <div class="carousel snaps" data-slider="portfolio">
+        <div class="snap-track" tabindex="0" aria-label="Portfolio items">
+          <!-- Project 1 -->
+          <article class="card snap-item">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1400&auto=format&fit=crop" alt="Bakery website mockup" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Sweet Crumbs Bakery</h3>
+              <p>Menu pages, seasonal specials, order-ahead form, and Google Maps embed.</p>
+              <a href="#" class="card-link" aria-label="Open live site (placeholder)">Live site</a>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="card snap-item">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop" alt="Fine dining restaurant website mockup" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Élan Fine Dining</h3>
+              <p>Reservations, seasonal tasting menu, chef's table, and curated wine pairings.</p>
+              <a href="https://elandining.netlify.app" class="card-link" target="_blank" rel="noopener noreferrer">Live site</a>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="card snap-item">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1400&auto=format&fit=crop" alt="Personal fitness coaching website mockup" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Peak Performance Coaching</h3>
+              <p>Programs, class schedule, trainer bios, testimonials, and free consultation CTA.</p>
+              <a href="#" class="card-link">Live site</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="service-grid">
+        <article class="service reveal">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/></svg>
+          <h3>Website Design</h3>
+          <p>Custom, friendly designs that fit your brand and neighborhood.</p>
+        </article>
+        <article class="service reveal">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+          <h3>Domain Setup Help</h3>
+          <p>We'll help connect your custom domain and configure DNS records.</p>
+        </article>
+        <article class="service reveal">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
+          <h3>Branding</h3>
+          <p>Logo marks, colors, and style that match your storefront vibe.</p>
+        </article>
+        <article class="service reveal">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+          <h3>Local SEO</h3>
+          <p>Hours, menus, and metadata set up to help neighbors find you.</p>
+        </article>
+        <article class="service reveal">
+          <svg class="svc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+          <h3>Responsive Layouts</h3>
+          <p>Looks great on phones for on-the-go customers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container two-col">
+      <div class="col copy">
+        <h2 class="section-title">Let’s Build Something</h2>
+        <p class="lead">Tell us about your project. We’ll get back within 1 business day.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-10 5L2 7"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:dhananjay.buisness@gmail.com">dhananjay.buisness@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span>Available Worldwide</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Social</h4>
+              <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals, timeline, and budget" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Request a Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jay & Michael. All rights reserved.</p>
+      <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
