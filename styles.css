@@ -301,8 +301,8 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .btn{width:100%;justify-content:center}
   .btn-sm{width:auto}
   .hero-card img{height:200px}
-  .card{min-width:calc(100% - 32px);max-width:100%;margin:0 16px}
-  .snap-track{gap:12px;padding:20px 16px;justify-content:flex-start}
+  .card{min-width:280px;max-width:320px}
+  .snap-track{gap:12px;padding:20px 16px;justify-content:center}
   .service-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .contact-form{padding:20px}
   #portfolio .section-header{padding:0 16px}
@@ -325,8 +325,8 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .tagline{font-size:15px}
   .hero-card img{height:160px}
   .hero-card-content{padding:12px}
-  .card{min-width:calc(100% - 24px);margin:0 12px}
-  .snap-track{gap:10px;padding:16px 12px;justify-content:flex-start}
+  .card{min-width:calc(100% - 24px);max-width:none}
+  .snap-track{gap:10px;padding:16px 12px;justify-content:center}
   .card-media img{height:160px}
   .card-body{padding:14px 16px}
   .card h3{font-size:18px}
@@ -347,6 +347,6 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
 @media (max-width: 360px){
   .headline{font-size:22px}
   .section-title{font-size:20px}
-  .card{min-width:calc(100% - 20px);margin:0 10px}
+  .card{min-width:calc(100% - 16px)}
   .snap-track{padding:12px}
 }
