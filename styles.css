@@ -260,11 +260,68 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .two-col{grid-template-columns:1fr}
   .service-grid{grid-template-columns:repeat(3,1fr)}
 }
-@media (max-width: 720px){
-  .nav-links{position:absolute;right:20px;top:64px;background:#ffffff;border:1px solid var(--border);border-radius:12px;padding:12px;display:none;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+@media (min-width: 769px) and (max-width: 1024px){
+  .container{padding:0 24px}
+  .section{padding:60px 0}
+  .headline{font-size:38px}
+  .tagline{font-size:17px}
+  .hero-card img{height:220px}
+  .service-grid{gap:16px}
+  .nav{height:60px}
+  .brand-text{font-size:17px}
+  .brand-mark{min-width:34px;height:34px}
+}
+@media (max-width: 768px){
+  .container{padding:0 16px}
+  .section{padding:48px 0}
+  .section-title{font-size:28px}
+  .lead{font-size:16px}
+  .nav{height:56px}
+  .nav-links{position:fixed;top:56px;right:16px;left:16px;background:#ffffff;border:1px solid var(--border);border-radius:12px;padding:16px;display:none;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.1);max-height:calc(100vh - 80px);overflow-y:auto}
   .nav-links.open{display:flex}
   .nav-toggle{display:flex}
-  .headline{font-size:34px}
-  .card{min-width:82%}
-  .service-grid{grid-template-columns:1fr 1fr}
+  .brand-text{font-size:16px}
+  .brand-mark{min-width:32px;height:32px;font-size:12px}
+  .hero{padding-top:72px}
+  .headline{font-size:32px;line-height:1.2}
+  .tagline{font-size:16px}
+  .cta-row{flex-direction:column;gap:10px}
+  .btn{width:100%;justify-content:center}
+  .btn-sm{width:auto}
+  .hero-card img{height:200px}
+  .card{min-width:85%}
+  .service-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .contact-form{padding:20px}
+}
+@media (max-width: 480px){
+  .container{padding:0 12px}
+  .section{padding:36px 0}
+  .section-title{font-size:24px}
+  .lead{font-size:15px}
+  .nav{height:52px}
+  .nav-links{top:52px;max-height:calc(100vh - 72px)}
+  .brand-text{font-size:14px}
+  .brand-mark{min-width:28px;height:28px;font-size:11px}
+  .hero{padding-top:64px}
+  .headline{font-size:26px}
+  .tagline{font-size:15px}
+  .hero-card img{height:160px}
+  .hero-card-content{padding:12px}
+  .card{min-width:90%}
+  .card-media img{height:180px}
+  .card-body{padding:16px}
+  .service-grid{grid-template-columns:1fr}
+  .service{padding:14px}
+  .svc-ic{width:24px;height:24px}
+  .contact-item{flex-direction:column;text-align:center}
+  .contact-icon{margin:0 0 12px 0}
+  .social-links{justify-content:center}
+  .form-row{margin-bottom:10px}
+  input,textarea{padding:10px}
+  .footer-inner{flex-direction:column;gap:12px;text-align:center}
+}
+@media (max-width: 360px){
+  .headline{font-size:22px}
+  .section-title{font-size:20px}
+  .card{min-width:95%}
 }
