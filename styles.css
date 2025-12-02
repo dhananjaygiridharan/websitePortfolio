@@ -77,10 +77,12 @@ a{color:inherit;text-decoration:none}
 
 /* Portfolio section */
 #portfolio .container {
-  max-width: 1000px; /* Slightly wider container for portfolio */
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #portfolio .section-header {
@@ -88,31 +90,31 @@ a{color:inherit;text-decoration:none}
   max-width: 800px;
   margin: 0 auto 32px;
   text-align: center;
-  flex-direction: column;
-  align-items: center;
+  padding: 0 20px;
 }
 
 /* Portfolio cards */
 .carousel {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .snap-track {
   display: flex;
-  gap: 32px;
-  padding: 20px 0;
-  justify-content: center;
-  scroll-padding: 0 20px;
-  width:100%;
-  box-sizing:border-box;
+  gap: 20px;
+  padding: 20px 20px;
+  justify-content: flex-start;
+  scroll-padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
 .card {
-  min-width: 400px;
+  min-width: 380px;
   max-width: 420px;
   background: var(--card);
   border: 1px solid var(--border);
@@ -120,6 +122,7 @@ a{color:inherit;text-decoration:none}
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
 }
 
 .card:hover {
@@ -262,7 +265,10 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .hero-grid{grid-template-columns:1fr}
   .two-col{grid-template-columns:1fr}
   .service-grid{grid-template-columns:repeat(3,1fr)}
+  .card{min-width:320px;max-width:360px}
+  .snap-track{gap:16px;padding:20px 16px}
 }
+
 @media (min-width: 769px) and (max-width: 1024px){
   .container{padding:0 24px}
   .section{padding:60px 0}
@@ -273,14 +279,17 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .nav{height:60px}
   .brand-text{font-size:17px}
   .brand-mark{min-width:34px;height:34px}
+  #portfolio .section-header{padding:0 24px}
+  .card-media img{height:200px}
 }
+
 @media (max-width: 768px){
   .container{padding:0 16px}
   .section{padding:48px 0}
   .section-title{font-size:28px}
   .lead{font-size:16px}
   .nav{height:56px}
-  .nav-links{position:fixed;top:56px;right:16px;left:16px;background:#ffffff;border:1px solid var(--border);border-radius:12px;padding:16px;display:none;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.1);max-height:calc(100vh - 80px);overflow-y:auto}
+  .nav-links{position:fixed;top:56px;right:16px;left:16px;background:#ffffff;border:1px solid var(--border);border-radius:12px;padding:16px;display:none;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.1);max-height:calc(100vh - 80px);overflow-y:auto;z-index:100}
   .nav-links.open{display:flex}
   .nav-toggle{display:flex}
   .brand-text{font-size:16px}
@@ -292,17 +301,23 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .btn{width:100%;justify-content:center}
   .btn-sm{width:auto}
   .hero-card img{height:200px}
-  .card{min-width:85%}
+  .card{min-width:calc(100% - 32px);max-width:100%;margin:0 16px}
+  .snap-track{gap:12px;padding:20px 0;justify-content:flex-start}
   .service-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .contact-form{padding:20px}
+  #portfolio .section-header{padding:0 16px}
+  #portfolio .container{padding:0}
+  .card-media img{height:180px}
+  .card-body{padding:16px 20px}
 }
+
 @media (max-width: 480px){
   .container{padding:0 12px}
   .section{padding:36px 0}
   .section-title{font-size:24px}
   .lead{font-size:15px}
   .nav{height:52px}
-  .nav-links{top:52px;max-height:calc(100vh - 72px)}
+  .nav-links{top:52px;right:12px;left:12px;max-height:calc(100vh - 72px)}
   .brand-text{font-size:14px}
   .brand-mark{min-width:28px;height:28px;font-size:11px}
   .hero{padding-top:64px}
@@ -310,21 +325,27 @@ input:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(
   .tagline{font-size:15px}
   .hero-card img{height:160px}
   .hero-card-content{padding:12px}
-  .card{min-width:90%}
-  .card-media img{height:180px}
-  .card-body{padding:16px}
-  .service-grid{grid-template-columns:1fr}
+  .card{min-width:calc(100% - 24px);margin:0 12px}
+  .snap-track{gap:10px;padding:16px 0}
+  .card-media img{height:160px}
+  .card-body{padding:14px 16px}
+  .card h3{font-size:18px}
+  .card p{font-size:14px}
+  .service-grid{grid-template-columns:1fr;gap:12px}
   .service{padding:14px}
   .svc-ic{width:24px;height:24px}
   .contact-item{flex-direction:column;text-align:center}
   .contact-icon{margin:0 0 12px 0}
   .social-links{justify-content:center}
   .form-row{margin-bottom:10px}
-  input,textarea{padding:10px}
+  input,textarea{padding:10px;font-size:16px}
   .footer-inner{flex-direction:column;gap:12px;text-align:center}
+  #portfolio .section-header{padding:0 12px}
 }
+
 @media (max-width: 360px){
   .headline{font-size:22px}
   .section-title{font-size:20px}
-  .card{min-width:95%}
+  .card{min-width:calc(100% - 20px);margin:0 10px}
+  .snap-track{padding:12px 0}
 }
